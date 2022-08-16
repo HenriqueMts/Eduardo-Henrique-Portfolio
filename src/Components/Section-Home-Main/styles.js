@@ -8,17 +8,6 @@ export const Container = styled.section`
   background-repeat: no-repeat;
 `;
 
-export const Header = styled.header`
-  width: 100%;
-  display: flex;
-`;
-
-export const Navbar = styled.nav`
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-`;
-
 export const Background = styled.div`
   background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
   position: absolute;
@@ -35,6 +24,4 @@ export const Background = styled.div`
   }
 `;
 
-export const Footer = styled.footer` 
-
-`
+export const Footer = styled.footer``;

@@ -1,27 +1,16 @@
-import { Container, Footer, Header, Navbar } from "./styles";
+import { Container, Footer } from "./styles";
 import { Link } from "react-router-dom";
-
+import Header from "../Header";
 import { Background } from "./styles";
 
 import BackgroundImage from "../../Assets/bg-hero.svg";
-import Logo from "../../Assets/PortfolioLogo.svg";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 const HomeMain = () => {
   return (
     <Container>
-      <Header>
-        <h1>
-          <img src={Logo} alt="Logo" />
-        </h1>
-        <Navbar>
-          <Link>Home</Link>
-          <Link> Projects</Link>
-          <Link> About</Link>
-          <Link> Resume</Link>
-        </Navbar>
-      </Header>
+      <Header />
       <Background>
         <img src={BackgroundImage} alt="Background" />
       </Background>
