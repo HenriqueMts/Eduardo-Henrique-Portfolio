@@ -7,6 +7,7 @@ import BackgroundImage from "../../Assets/bg-hero.svg";
 import Logo from "../../Assets/PortfolioLogo.svg";
 
 import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 const HomeMain = () => {
   return (
     <Container>
@@ -33,7 +34,13 @@ const HomeMain = () => {
         <h2>I’m a Front-End developer focused on react</h2>
       </div>
       <Footer>
-        <AiFillGithub />
+        <div>
+          <AiFillGithub />
+          <AiFillLinkedin />
+        </div>
+        <div>
+          <Link>GET IN TOUCH</Link>
+        </div>
       </Footer>
     </Container>
   );
