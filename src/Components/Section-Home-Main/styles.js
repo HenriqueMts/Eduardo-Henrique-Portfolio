@@ -3,9 +3,14 @@ import styled from "styled-components";
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+
+  max-height: 505px;
   background-position: center;
   background-repeat: no-repeat;
+`;
+
+export const Main = styled.main`
+  display: flex;
 `;
 
 export const Background = styled.div`
