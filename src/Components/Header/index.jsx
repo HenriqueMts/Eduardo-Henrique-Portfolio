@@ -1,7 +1,6 @@
 import Logo from "../../Assets/PortfolioLogo.svg";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import { Container, Navbar } from "./styles";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,10 +9,27 @@ const Header = () => {
         <img src={Logo} alt="Logo" />
       </h1>
       <Navbar>
-        <Link>Home</Link>
-        <Link> Projects</Link>
-        <Link> About</Link>
-        <Link> Resume</Link>
+        <Link to="Home" spy={true} smooth={true} offset={-70} duration={500}>
+          Home
+        </Link>
+        <Link
+          to="Projects"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          Projects
+        </Link>
+        <Link to="About" spy={true} smooth={true} offset={-80} duration={500}>
+          About
+        </Link>
+        <a
+          target="blanck"
+          href="https://drive.google.com/file/d/1NSx8VjbZAE2g0HgglgoOz3yetvoxpmh9/view?usp=sharing"
+        >
+          Resume
+        </a>
       </Navbar>
     </Container>
   );

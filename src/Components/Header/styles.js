@@ -7,4 +7,8 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  a {
+    color: white;
+    cursor: pointer;
+  }
 `;
