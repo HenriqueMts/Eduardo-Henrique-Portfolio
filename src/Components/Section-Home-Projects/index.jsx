@@ -13,6 +13,7 @@ const HomeProjects = () => {
           path={"https://adopet-m3.vercel.app/"}
           source={Adopet}
           alt={"Adopet"}
+          title={"Adopet"}
         >
           Landing page of my training in Front-End development and animations.
         </ProjectCard>
@@ -20,6 +21,7 @@ const HomeProjects = () => {
           path={"https://nu-kenzie-redux-thunk.vercel.app/"}
           source={NuKenzie}
           alt={"NuKenzie"}
+          title={"Nu Kenzie"}
         >
           Landing page of my training in Front-End development and animations.
         </ProjectCard>

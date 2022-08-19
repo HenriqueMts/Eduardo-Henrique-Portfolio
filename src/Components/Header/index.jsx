@@ -6,17 +6,19 @@ const Header = () => {
   return (
     <Container>
       <h1>
-        <img src={Logo} alt="Logo" />
+        <Link to="Home" spy={true} smooth={true} offset={-80} duration={500}>
+          <img src={Logo} alt="Logo" />
+        </Link>
       </h1>
       <Navbar>
-        <Link to="Home" spy={true} smooth={true} offset={-70} duration={500}>
+        <Link to="Home" spy={true} smooth={true} offset={-80} duration={500}>
           Home
         </Link>
         <Link
           to="Projects"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={-80}
           duration={500}
         >
           Projects
