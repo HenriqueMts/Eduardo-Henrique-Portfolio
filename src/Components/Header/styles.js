@@ -9,17 +9,11 @@ export const Container = styled.header`
   max-width: 100%;
   position: fixed;
   z-index: 100;
-  height: 80px;
+  height: 70px;
   gap: 18px;
-  box-shadow: 0px 19px 48px -11px rgba(0, 5, 19, 0.75);
-  -webkit-box-shadow: 0px 19px 48px -11px rgba(0, 5, 19, 0.75);
-  -moz-box-shadow: 0px 19px 48px -11px rgba(0, 5, 19, 0.75);
-
-  background: linear-gradient(
-    180deg,
-    #000000 0%,
-    rgba(18, 25, 43, 0.2) 115.09%
-  );
+  background: linear-gradient(180deg, #000000 0%, rgba(18, 25, 43, 0) 63.54%);
+  background-blend-mode: soft-light;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   img {
     width: 42px;
@@ -28,6 +22,7 @@ export const Container = styled.header`
 
   a {
     cursor: pointer;
+    text-decoration: none;
   }
   .burger {
     display: flex;
@@ -71,6 +66,15 @@ export const Container = styled.header`
     transform: rotate(-134deg);
     top: -8px;
   }
+  @media (min-width: 720px) {
+    max-width: var(--max-width);
+    flex-direction: row;
+
+    gap: 8px;
+    .btn--burger {
+      display: none;
+    }
+  }
 
   ${({ handleButton }) =>
     handleButton &&
@@ -85,7 +89,7 @@ export const Navbar = styled.nav`
   width: 100%;
   height: 0px;
   position: absolute;
-  top: 80px;
+  top: 70px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -119,6 +123,40 @@ export const Navbar = styled.nav`
   a {
     color: white;
     cursor: pointer;
+  }
+
+  @media (min-width: 720px) {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    width: 60%;
+    height: 70px;
+    visibility: visible;
+    padding: 0;
+    margin-left: 10%;
+    background: none;
+    ul {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0;
+      gap: 18px;
+    }
+    li {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      border-bottom: 0;
+      gap: 18px;
+      padding: 12px;
+    }
   }
   ${({ handleButton }) =>
     handleButton &&
