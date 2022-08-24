@@ -1,5 +1,5 @@
 import Logo from "../../Assets/PortfolioLogo.svg";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { Container, Navbar } from "./styles";
 
 import { useState } from "react";
