@@ -1,7 +1,6 @@
-import { Container, Footer, Main } from "./styles";
-
-import { Background } from "./styles";
-
+import { Container, Footer, Main, Background, IconBox } from "./styles";
+import LinkedinIcon from "../../Assets/LinkedinIcon.svg";
+import GitIcon from "../../Assets/GitIcon.svg";
 import BackgroundImage from "../../Assets/bg-hero.svg";
 
 import { AiFillGithub } from "react-icons/ai";
@@ -13,21 +12,32 @@ const HomeMain = () => {
         <img src={BackgroundImage} alt="Background" />
       </Background>
       <Main>
-        <div>
+        <div className="text-content-first">
           <h6>Hi, I'm</h6>
           <h1>EDUARDO HENRIQUE </h1>
           <h4>FRONT-END DEVELOPER</h4>
         </div>
-        <div>
-          <h2>I’m a Front-End developer focused on react</h2>
+        <div className="text-content-second">
+          <h2>I'm a Front-End developer focused on react</h2>
         </div>
       </Main>
 
       <Footer>
-        <div>
-          <AiFillGithub />
-          <AiFillLinkedin />
-        </div>
+        <IconBox>
+          <li>
+            <a target="black" href="https://github.com/HenriqueMts">
+              <img src={GitIcon} alt="GitHub Icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              target="black"
+              href="https://www.linkedin.com/in/eduardohenrique-dev/"
+            >
+              <img src={LinkedinIcon} alt="Linkedin Icon" />
+            </a>
+          </li>
+        </IconBox>
         <div>
           <a href="mailto:henrique.mts@outlook.com.br">GET IN TOUCH</a>
         </div>
