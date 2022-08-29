@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 166px;
+  width: 80%;
   figure {
-    width: 166px;
+    width: 100%;
     img {
       width: 100%;
     }
