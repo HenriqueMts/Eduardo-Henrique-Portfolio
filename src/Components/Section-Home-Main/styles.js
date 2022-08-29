@@ -11,7 +11,6 @@ export const Main = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*  height: 380px; */
   width: 100%;
   max-width: 100%;
 
@@ -20,18 +19,6 @@ export const Main = styled.section`
     align-items: center;
     margin-top: 20%;
     flex-direction: column;
-
-    h6 {
-      font-family: "Roboto Slab";
-      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
-
-      margin-top: 30%;
-      font-size: 1.5rem;
-    }
 
     h1 {
       background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
@@ -44,6 +31,7 @@ export const Main = styled.section`
       margin-top: 20%;
       font-size: 2.1rem;
     }
+
     h4 {
       background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
       -webkit-background-clip: text;
@@ -52,14 +40,27 @@ export const Main = styled.section`
       text-fill-color: transparent;
 
       font-family: "Roboto Slab", serif;
-      margin-top: 20%;
+      margin-top: 10%;
+      font-size: 1.5rem;
+    }
+
+    h6 {
+      font-family: "Roboto Slab";
+      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+
+      margin-right: 50%;
+      margin-top: 30%;
       font-size: 1.5rem;
     }
   }
   .text-content-second {
     margin-top: 20%;
     h2 {
-      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
+      background: linear-gradient(89.99deg, #b5c4e9 -4.74%, #174086 102.32%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -67,6 +68,36 @@ export const Main = styled.section`
 
       font-family: "Roboto Slab", serif;
       font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .text-content-first {
+      margin-top: 5%;
+      flex-direction: column;
+
+      h1 {
+        margin-top: 10%;
+        font-size: 3.5rem;
+      }
+
+      h4 {
+        margin-top: 12%;
+        font-size: 1.2rem;
+      }
+      h6 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .text-content-second {
+      margin-top: 15%;
+      h2 {
+        font-size: 1.2rem;
+      }
     }
   }
 `;
@@ -94,10 +125,15 @@ export const Footer = styled.footer`
   align-items: center;
   justify-content: space-around;
   margin-top: 20%;
+  width: 100%;
 
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+  @media (min-width: 720px) {
+    margin-top: 12%;
   }
 `;
 
@@ -111,5 +147,10 @@ export const IconBox = styled.ul`
   img {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  @media (min-width: 720px) {
+    width: 70%;
+    gap: 20px;
   }
 `;

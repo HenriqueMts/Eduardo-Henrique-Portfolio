@@ -3,8 +3,6 @@ import LinkedinIcon from "../../Assets/LinkedinIcon.svg";
 import GitIcon from "../../Assets/GitIcon.svg";
 import BackgroundImage from "../../Assets/bg-hero.svg";
 
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
 const HomeMain = () => {
   return (
     <Container id="Home">
