@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  /*   height: 100vh; */
+  height: 100vh;
   position: relative;
 `;
 
@@ -25,7 +25,6 @@ export const Main = styled.section`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
 
       font-family: "Roboto Slab", serif;
       margin-top: 20%;
@@ -37,7 +36,6 @@ export const Main = styled.section`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
 
       font-family: "Roboto Slab", serif;
       margin-top: 10%;
@@ -50,7 +48,6 @@ export const Main = styled.section`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
 
       margin-right: 50%;
       margin-top: 30%;
@@ -64,7 +61,6 @@ export const Main = styled.section`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      text-fill-color: transparent;
 
       font-family: "Roboto Slab", serif;
       font-size: 1rem;
