@@ -30,7 +30,12 @@ const Carousel = ({ children }) => {
   return (
     <CarouselContainer>
       <CarouselWrapper>
-        <button onClick={prev} className="left-arrow">
+        <button
+          onClick={prev}
+          className={
+            currentIndex < length - 1 ? "left-arrow-none" : "left-arrow"
+          }
+        >
           &lt;
         </button>
         <CarouselContentWrapper>

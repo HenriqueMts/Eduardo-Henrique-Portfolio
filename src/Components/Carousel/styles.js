@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const CarouselContainer = styled.div`
   width: 100%;
-
+  min-width: 100%;
+  height: 60vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 `;
 
@@ -13,11 +16,12 @@ export const CarouselWrapper = styled.div`
   position: relative;
 
   .left-arrow,
-  .right-arrow {
+  .right-arrow,
+  .left-arrow-none {
     cursor: pointer;
     position: absolute;
-    z-index: 1;
-    top: 50%;
+    z-index: 1000;
+    top: 20%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;
@@ -34,11 +38,14 @@ export const CarouselWrapper = styled.div`
     transition: ease 0.8s;
   }
   .left-arrow {
-    left: 24px;
+    left: 18px;
+  }
+  .left-arrow-none {
+    visibility: hidden;
   }
 
   .right-arrow {
-    right: 24px;
+    right: 18px;
   }
 `;
 

@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle` 
+body{
+	background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
+}
 body::-webkit-scrollbar {
       width: 6px;
       background: #f4f4f4;
@@ -24,6 +27,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font-family:'Mukta', sans-serif;
 	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

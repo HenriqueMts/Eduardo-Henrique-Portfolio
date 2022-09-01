@@ -3,14 +3,15 @@ import { Aside, Container, Content } from "./styles";
 import Carousel from "../Carousel";
 
 import ProjectCard from "../Project-Card";
-import Adopet from "../../Assets/Adopet.svg";
-import NuKenzie from "../../Assets/NuKenzie.svg";
+import Adopet from "../../Assets/Adopet.png";
+import NuKenzie from "../../Assets/NuKenzie.png";
 
 const HomeProjects = () => {
   return (
     <Container id="Projects">
       <Content>
         <h1>Projects</h1>
+        <p>Selected projetcs</p>
       </Content>
       <Aside>
         <Carousel>

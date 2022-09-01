@@ -120,7 +120,7 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 20%;
+  margin-top: 30%;
   width: 100%;
 
   a {
@@ -129,7 +129,7 @@ export const Footer = styled.footer`
   }
 
   @media (min-width: 720px) {
-    margin-top: 12%;
+    margin-top: 8%;
   }
 `;
 
