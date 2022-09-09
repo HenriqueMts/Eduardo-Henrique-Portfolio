@@ -8,7 +8,11 @@ export const Container = styled.section`
   background-color: #683bb7;
   flex-direction: column;
   color: #fff;
+
   background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
 `;
 
 export const Content = styled.div`
@@ -34,6 +38,10 @@ export const Content = styled.div`
     font-size: 2rem;
     text-align: center;
     margin-top: 5%;
+  }
+  @media (min-width: 720px) {
+    width: 20%;
+    height: 100vh;
   }
 `;
 

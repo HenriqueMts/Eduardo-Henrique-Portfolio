@@ -8,6 +8,9 @@ export const CarouselContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (min-width: 720px) {
+    height: 100vh;
+  }
 `;
 
 export const CarouselWrapper = styled.div`
@@ -52,7 +55,7 @@ export const CarouselWrapper = styled.div`
 export const CarouselContentWrapper = styled.div`
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 
 export const CarouselContent = styled.div`
