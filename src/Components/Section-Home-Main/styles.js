@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
+  @media (min-width: 720px) {
+    height: 100vh;
+  }
 `;
 
 export const Main = styled.section`
@@ -21,22 +24,12 @@ export const Main = styled.section`
     flex-direction: column;
 
     h1 {
-      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-
       font-family: "Roboto Slab", serif;
       margin-top: 20%;
       font-size: 2.1rem;
     }
 
     h4 {
-      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-
       font-family: "Roboto Slab", serif;
       margin-top: 10%;
       font-size: 1.5rem;
@@ -44,10 +37,6 @@ export const Main = styled.section`
 
     h6 {
       font-family: "Roboto Slab";
-      background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
 
       margin-right: 50%;
       margin-top: 30%;
@@ -57,11 +46,6 @@ export const Main = styled.section`
   .text-content-second {
     margin-top: 20%;
     h2 {
-      background: linear-gradient(89.99deg, #b5c4e9 -4.74%, #174086 102.32%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-
       font-family: "Roboto Slab", serif;
       font-size: 1rem;
     }
@@ -130,6 +114,11 @@ export const Footer = styled.footer`
 
   @media (min-width: 720px) {
     margin-top: 8%;
+  }
+  a:hover {
+    font-size: 18px;
+    transition: 0.3s ease;
+    text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.6);
   }
 `;
 

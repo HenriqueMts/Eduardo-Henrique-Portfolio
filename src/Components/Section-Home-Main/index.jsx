@@ -11,12 +11,14 @@ const HomeMain = () => {
       </Background>
       <Main>
         <div className="text-content-first">
-          <h6>Hi, I'm</h6>
-          <h1>EDUARDO HENRIQUE </h1>
-          <h4>FRONT-END DEVELOPER</h4>
+          <h6 className="text-linear-gradient">Hi, I'm</h6>
+          <h1 className="text-linear-gradient">EDUARDO HENRIQUE </h1>
+          <h4 className="text-linear-gradient">FRONT-END DEVELOPER</h4>
         </div>
         <div className="text-content-second">
-          <h2>I'm a Front-End developer focused on react</h2>
+          <h2 className="text-linear-gradient">
+            I'm a Front-End developer focused on react
+          </h2>
         </div>
       </Main>
 

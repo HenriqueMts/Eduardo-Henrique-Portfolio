@@ -13,6 +13,13 @@ export const Container = styled.div`
       width: 100%;
     }
   }
+  @media (min-width: 720px) {
+    height: 100vh;
+
+    img {
+      height: 100vh;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -51,5 +58,7 @@ export const Content = styled.div`
     background-clip: text;
     text-decoration: none;
     font-size: 1rem;
+  }
+  @media (min-width: 720px) {
   }
 `;

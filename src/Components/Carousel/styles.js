@@ -23,8 +23,8 @@ export const CarouselWrapper = styled.div`
   .left-arrow-none {
     cursor: pointer;
     position: absolute;
-    z-index: 1000;
-    top: 20%;
+    z-index: 100;
+    top: 13%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;
@@ -32,6 +32,9 @@ export const CarouselWrapper = styled.div`
     background-color: transparent;
     color: #000513;
     border: 1px solid #000513;
+    @media (min-width: 720px) {
+      top: 50%;
+    }
   }
   .left-arrow:hover,
   .right-arrow:hover {
@@ -72,5 +75,11 @@ export const CarouselContent = styled.div`
     width: 100%;
     flex-shrink: 0;
     flex-grow: 1;
+  }
+
+  @media (min-width: 720px) {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid green;
   }
 `;

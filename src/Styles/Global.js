@@ -2,12 +2,21 @@ import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle` 
 body{
+	overflow-x: hidden;
 	background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(0, 5, 19, 0.4) 20%, rgba(10, 16, 33, 0.4) 50.28%, rgba(18, 25, 43, 0.4) 81.15%);  
+  border-radius: 20px;      
+  border: 1px solid ;  
+}
 }
 body::-webkit-scrollbar {
-      width: 6px;
-      background: #f4f4f4;
+      width: 8px;
+      background: #12192B;
     }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,5 +63,11 @@ table {
 }
 button{
 cursor: pointer;
+}
+.text-linear-gradient{
+	background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
 }
 `;

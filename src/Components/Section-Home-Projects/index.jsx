@@ -10,7 +10,7 @@ const HomeProjects = () => {
   return (
     <Container id="Projects">
       <Content>
-        <h1>Projects</h1>
+        <h1 className="text-linear-gradient">Projects</h1>
         <p>Selected projetcs</p>
       </Content>
       <Aside>

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   background-color: #683bb7;
@@ -29,11 +28,6 @@ export const Content = styled.div`
     color: #7c7d80;
   }
   h1 {
-    background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
     font-family: "Roboto Slab", serif;
     font-size: 2rem;
     text-align: center;

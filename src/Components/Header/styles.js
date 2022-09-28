@@ -24,6 +24,7 @@ export const Container = styled.header`
     cursor: pointer;
     text-decoration: none;
   }
+
   .burger {
     display: flex;
     align-items: center;
@@ -156,6 +157,11 @@ export const Navbar = styled.nav`
       border-bottom: 0;
       gap: 18px;
       padding: 12px;
+    }
+    a:hover {
+      font-size: 18px;
+      transition: 0.3s ease;
+      text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.6);
     }
   }
   ${({ handleButton }) =>
