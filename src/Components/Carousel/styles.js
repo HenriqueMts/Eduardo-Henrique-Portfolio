@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const CarouselContainer = styled.div`
   width: 100%;
   min-width: 100%;
-  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +23,7 @@ export const CarouselWrapper = styled.div`
     cursor: pointer;
     position: absolute;
     z-index: 100;
-    top: 13%;
+    top: 16%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;
@@ -80,6 +79,5 @@ export const CarouselContent = styled.div`
   @media (min-width: 720px) {
     height: 100vh;
     width: 100%;
-    border: 2px solid green;
   }
 `;

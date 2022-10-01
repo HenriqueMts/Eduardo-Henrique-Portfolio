@@ -8,13 +8,13 @@ export const Container = styled.header`
   width: 100%;
   max-width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 10000;
   height: 70px;
   gap: 18px;
   background: linear-gradient(180deg, #000000 0%, rgba(18, 25, 43, 0) 63.54%);
   background-blend-mode: soft-light;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+  overflow-x: visible;
   img {
     width: 42px;
     margin: 0;
@@ -67,7 +67,16 @@ export const Container = styled.header`
     transform: rotate(-134deg);
     top: -8px;
   }
-  @media (min-width: 720px) {
+
+  ${({ handleButton }) =>
+    handleButton &&
+    css`
+      background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
+      transition: ease 0.7s;
+    `}
+
+  /* ----- BREACKPOINTS ----- */
+  @media (min-width: 1150px) {
     max-width: var(--max-width);
     flex-direction: row;
 
@@ -76,13 +85,6 @@ export const Container = styled.header`
       display: none;
     }
   }
-
-  ${({ handleButton }) =>
-    handleButton &&
-    css`
-      background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
-      transition: ease 0.7s;
-    `}
 `;
 
 export const Navbar = styled.nav`
@@ -126,7 +128,20 @@ export const Navbar = styled.nav`
     cursor: pointer;
   }
 
-  @media (min-width: 720px) {
+  ${({ handleButton }) =>
+    handleButton &&
+    css`
+      height: 100vh;
+      max-height: 100vh;
+      visibility: visible;
+      overflow: hidden;
+      padding: 24px 0;
+      margin: 0;
+    `}
+
+  /* ----- BREACKPOINTS ----- */
+
+    @media (min-width: 1150px) {
     display: flex;
     justify-content: flex-start;
     position: relative;
@@ -164,14 +179,4 @@ export const Navbar = styled.nav`
       text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.6);
     }
   }
-  ${({ handleButton }) =>
-    handleButton &&
-    css`
-      height: 100vh;
-      max-height: 100vh;
-      visibility: visible;
-      overflow: hidden;
-      padding: 24px 0;
-      margin: 0;
-    `}
 `;

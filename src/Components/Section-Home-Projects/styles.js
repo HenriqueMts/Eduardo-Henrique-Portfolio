@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   width: 100%;
+  height: 90vh;
   display: flex;
-  align-items: center;
   background-color: #683bb7;
   flex-direction: column;
   color: #fff;
@@ -17,11 +17,9 @@ export const Container = styled.section`
 export const Content = styled.div`
   top: 0;
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   text-align: center;
 
-  /*  align-items: center;
-  display: flex; */
   background: linear-gradient(180deg, #000d29 0%, rgba(0, 26, 82, 0.83) 100%);
   p {
     margin-top: 10%;
@@ -39,7 +37,8 @@ export const Content = styled.div`
   }
 `;
 
-export const Aside = styled.aside`
-  height: 100vh;
+export const Aside = styled.div`
+  max-width: 100%;
+  max-height: 40vh;
   width: 100%;
 `;

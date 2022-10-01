@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle` 
+*, *::after, *::before{
+	box-sizing: border-box;
+}
 body{
 	overflow-x: hidden;
 	background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);

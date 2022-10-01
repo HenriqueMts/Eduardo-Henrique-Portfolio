@@ -1,29 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
   width: 100%;
-  height: 60vh;
-  position: relative;
+  height: 260px;
 
   figure {
     position: absolute;
     width: 100%;
+    height: 100%;
     z-index: -20;
     img {
       width: 100%;
-    }
-  }
-  @media (min-width: 720px) {
-    height: 100vh;
-
-    img {
-      height: 100vh;
+      height: 100%;
     }
   }
 `;
 
-export const Content = styled.div`
-  margin-top: 40%;
+export const Content = styled.footer`
+  /* margin-top: 40%; */
+
   background: linear-gradient(
     90deg,
     rgba(0, 5, 19, 0.4) 20%,
@@ -52,13 +50,10 @@ export const Content = styled.div`
     color: #7c7d80;
   }
   a {
-    background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-decoration: none;
     font-size: 1rem;
   }
   @media (min-width: 720px) {
+    height: 100px;
+    margin-top: 50%;
   }
 `;
