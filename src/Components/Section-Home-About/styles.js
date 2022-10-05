@@ -8,15 +8,22 @@ export const Container = styled.section`
   height: 100vh;
 
   background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 1150px) {
+    flex-direction: row;
+  }
 `;
 export const Content = styled.div`
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin-top: 3%;
+  gap: 18px;
 
   border-bottom: 3px solid #b5c4e9;
   border-radius: 8px;
@@ -41,6 +48,19 @@ export const Content = styled.div`
     color: #7c7d80;
     margin-bottom: 4%;
   }
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 1150px) {
+    width: 80%;
+    height: 90vh;
+    border-bottom: 0;
+    border-right: 3px solid #b5c4e9;
+    border-radius: 3px;
+    p {
+      width: 90%;
+    }
+  }
 `;
 
 export const Footer = styled.footer`
@@ -64,6 +84,21 @@ export const Footer = styled.footer`
         width: 1.5rem;
         height: 1.5rem;
       }
+    }
+  }
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 1150px) {
+    width: 30%;
+    height: 90vh;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      gap: 28px;
+      justify-content: center;
     }
   }
 `;

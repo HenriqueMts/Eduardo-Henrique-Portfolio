@@ -8,10 +8,10 @@ import Henry from "../../Assets/Henry.svg";
 const HomeAbout = () => {
   return (
     <Container id="About">
-      <figure>
-        <img title="Eduardo Henrique" src={Henry} alt="Eduardo Henrique" />
-      </figure>
       <Content>
+        <figure>
+          <img title="Eduardo Henrique" src={Henry} alt="Eduardo Henrique" />
+        </figure>
         <h3 className="text-linear-gradient">About me</h3>
         <p>
           Junior Front-End Developer based in Recife/Brazil. I worked in the

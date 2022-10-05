@@ -17,11 +17,27 @@ export const Container = styled.div`
       height: 100%;
     }
   }
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 550px) {
+    height: 460px;
+
+    figure {
+      height: 460px;
+    }
+  }
+
+  @media (min-width: 1150px) {
+    height: 100vh;
+
+    figure {
+      height: 100%;
+    }
+  }
 `;
 
 export const Content = styled.footer`
-  /* margin-top: 40%; */
-
   background: linear-gradient(
     90deg,
     rgba(0, 5, 19, 0.4) 20%,
@@ -51,9 +67,5 @@ export const Content = styled.footer`
   }
   a {
     font-size: 1rem;
-  }
-  @media (min-width: 720px) {
-    height: 100px;
-    margin-top: 50%;
   }
 `;

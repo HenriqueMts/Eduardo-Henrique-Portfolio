@@ -7,9 +7,9 @@ export const CarouselContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @media (min-width: 720px) {
+  /*  @media (min-width: 550px) {
     height: 100vh;
-  }
+  } */
 `;
 
 export const CarouselWrapper = styled.div`
@@ -31,7 +31,10 @@ export const CarouselWrapper = styled.div`
     background-color: transparent;
     color: #000513;
     border: 1px solid #000513;
-    @media (min-width: 720px) {
+
+    /* ----- BREACKPOINTS ----- */
+
+    @media (min-width: 1150px) {
       top: 50%;
     }
   }
@@ -76,7 +79,7 @@ export const CarouselContent = styled.div`
     flex-grow: 1;
   }
 
-  @media (min-width: 720px) {
+  @media (min-width: 550px) {
     height: 100vh;
     width: 100%;
   }

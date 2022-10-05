@@ -4,7 +4,13 @@ export const Container = styled.section`
   width: 100%;
   height: 90vh;
   position: relative;
-  @media (min-width: 720px) {
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 550px) {
+    height: 110vh;
+  }
+  @media (min-width: 850px) {
     height: 100vh;
   }
 `;
@@ -51,7 +57,61 @@ export const Main = styled.section`
     }
   }
 
-  @media (min-width: 720px) {
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 550px) {
+    justify-content: space-around;
+
+    .text-content-first {
+      margin-top: 10%;
+
+      h1 {
+        margin-top: 12%;
+      }
+
+      h4 {
+        margin-top: 8%;
+      }
+
+      h6 {
+        margin-top: 20%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (min-width: 850px) {
+    flex-direction: row;
+    height: 80vh;
+    .text-content-first {
+      margin-top: 8%;
+      width: 60%;
+
+      h1 {
+        margin-top: 8%;
+        font-size: 2rem;
+      }
+
+      h4 {
+        margin-top: 8%;
+      }
+
+      h6 {
+        margin-top: 18%;
+        font-size: 1.8rem;
+      }
+    }
+
+    .text-content-second {
+      margin-top: 20%;
+      h2 {
+        font-family: "Roboto Slab", serif;
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  @media (min-width: 1150px) {
     flex-direction: row;
     justify-content: space-around;
 
@@ -60,12 +120,12 @@ export const Main = styled.section`
       flex-direction: column;
 
       h1 {
-        margin-top: 10%;
+        margin-top: 15%;
         font-size: 3.5rem;
       }
 
       h4 {
-        margin-top: 12%;
+        margin-top: 14%;
         font-size: 1.2rem;
       }
       h6 {
@@ -96,7 +156,7 @@ export const Background = styled.div`
   overflow: hidden;
   img {
     height: 100vh;
-    width: 100%;
+    width: 200%;
   }
 `;
 
@@ -112,13 +172,19 @@ export const Footer = styled.footer`
     text-decoration: none;
   }
 
-  @media (min-width: 720px) {
-    margin-top: 8%;
-  }
   a:hover {
     font-size: 18px;
     transition: 0.3s ease;
     text-shadow: 0px 4px 7px rgba(255, 255, 255, 0.6);
+  }
+
+  /* ----- BREACKPOINTS ----- */
+  @media (min-width: 850px) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 1150px) {
+    margin-top: 5%;
   }
 `;
 
@@ -134,7 +200,9 @@ export const IconBox = styled.ul`
     height: 1.5rem;
   }
 
-  @media (min-width: 720px) {
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 1150px) {
     width: 70%;
     gap: 20px;
   }

@@ -9,8 +9,15 @@ export const Container = styled.section`
   color: #fff;
 
   background: linear-gradient(90deg, #000513 20%, #12192b 81.15%);
-  @media (min-width: 720px) {
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 550px) {
+    height: 100vh;
+  }
+  @media (min-width: 1150px) {
     flex-direction: row;
+    height: 110vh;
   }
 `;
 
@@ -31,9 +38,16 @@ export const Content = styled.div`
     text-align: center;
     margin-top: 5%;
   }
-  @media (min-width: 720px) {
-    width: 20%;
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 550px) {
+    height: 38vh;
+  }
+
+  @media (min-width: 1150px) {
     height: 100vh;
+    width: 28%;
   }
 `;
 
@@ -41,4 +55,9 @@ export const Aside = styled.div`
   max-width: 100%;
   max-height: 40vh;
   width: 100%;
+
+  @media (min-width: 1150px) {
+    height: 100vh;
+    max-height: 100vh;
+  }
 `;
