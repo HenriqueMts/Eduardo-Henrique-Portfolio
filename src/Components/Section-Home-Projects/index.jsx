@@ -11,7 +11,10 @@ const HomeProjects = () => {
     <Container id="Projects">
       <Content>
         <h1 className="text-linear-gradient">Projects</h1>
-        <p>Selected projetcs</p>
+        <p>
+          Selected projects for a presentation, follow to project page by
+          clicking on see more at the carrousel.
+        </p>
       </Content>
       <Aside>
         <Carousel>
@@ -21,7 +24,12 @@ const HomeProjects = () => {
             alt={"NuKenzie"}
             title={"Nu Kenzie"}
           >
-            Landing page of my training in Front-End development and animations.
+            Nu Kenzie is a Financial control control Website to organize you
+            life
+            <a href="https://br.freepik.com/vetores-gratis/ilustracao-da-pagina-inicial-da-web-criativa_21742831.htm#query=landing%20page&position=6&from_view=keyword">
+              Image by pikisuperstar
+            </a>
+            on Freepik
           </ProjectCard>
           <ProjectCard
             path={"https://adopet-m3.vercel.app/"}
@@ -29,7 +37,7 @@ const HomeProjects = () => {
             alt={"Adopet"}
             title={"Adopet"}
           >
-            Landing page of my training in Front-End development and animations.
+            Adopet is an NGO website who&prime;s connected pet at pet lovers
           </ProjectCard>
         </Carousel>
       </Aside>

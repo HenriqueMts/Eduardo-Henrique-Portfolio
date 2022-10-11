@@ -11,10 +11,10 @@ const ProjectCard = ({ title, children, source, alt, path }) => {
 
       <Content>
         <h2>{title}</h2>
-        <span>{children}</span>
-        <a className="text-linear-gradient" target="blank" href={path}>
+        <a /* className="text-linear-gradient" */ target="blank" href={path}>
           SEE MORE <BsArrowRightShort className="react-icons" />
         </a>
+        <span>{children}</span>
       </Content>
     </Container>
   );

@@ -46,8 +46,17 @@ export const Content = styled.div`
   }
 
   @media (min-width: 1150px) {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
     height: 100vh;
     width: 28%;
+    text-align: start;
+    p {
+      margin-top: 20%;
+      width: 80%;
+    }
   }
 `;
 

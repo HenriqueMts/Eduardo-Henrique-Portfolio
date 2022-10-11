@@ -47,7 +47,7 @@ export const Content = styled.footer`
   display: flex;
   flex-direction: column;
   .react-icons {
-    color: #174086;
+    color: #49739c;
     width: 24px;
     height: 24px;
     vertical-align: middle;
@@ -61,13 +61,15 @@ export const Content = styled.footer`
   }
   span {
     font-size: 0.8rem;
-    margin-top: 1%;
+
     margin-bottom: 1%;
     color: #7c7d80;
   }
   a {
-    padding: 2px;
-    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #49739c;
+    font-size: 1.1rem;
     transition: 1s ease;
   }
   a:hover {

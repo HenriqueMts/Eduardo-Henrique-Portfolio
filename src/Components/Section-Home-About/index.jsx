@@ -14,9 +14,12 @@ const HomeAbout = () => {
         </figure>
         <h3 className="text-linear-gradient">About me</h3>
         <p>
-          Junior Front-End Developer based in Recife/Brazil. I worked in the
-          administration area for almost 2 years when I decided I.T Area is my
-          passion.
+          &lt; Front-End Developer based in Recife/Brazil. I worked in the
+          administration area for almost two years before I realize I.T area is
+          my real passion, I start to study UI/UX Design, but my curiosity
+          pushed me to want to know more about the development of these
+          interfaces, so initiated my carrier transition during the pandemic in
+          2021 where I transformed my curiosity into passion &frasl;&gt;
         </p>
       </Content>
       <Footer>

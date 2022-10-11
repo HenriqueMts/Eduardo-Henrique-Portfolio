@@ -58,7 +58,7 @@ export const Content = styled.div`
     border-right: 3px solid #b5c4e9;
     border-radius: 3px;
     p {
-      width: 90%;
+      width: 80%;
     }
   }
 `;
