@@ -69,7 +69,7 @@ const Header = () => {
           <li>
             <a
               target="blanck"
-              href="https://drive.google.com/file/d/1WtGvdFrUCC1zrZaD96LGewUFwKI_2uvE/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xS5wx7N6HZGtVM9vm06NXPeLdJoojkqz/view?usp=sharing"
               onClick={closeMenu}
             >
               Resume
