@@ -66,6 +66,11 @@ export const Content = styled.footer`
     color: #7c7d80;
   }
   a {
+    padding: 2px;
     font-size: 1rem;
+    transition: 1s ease;
+  }
+  a:hover {
+    transform: translateX(10px);
   }
 `;

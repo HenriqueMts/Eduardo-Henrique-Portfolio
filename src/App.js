@@ -1,12 +1,9 @@
 import GlobalStyle from "./Styles/Global";
-import "./App.css";
 
 import Home from "./Page/Home";
 import Header from "./Components/Header";
 
-function App() {
-  /* console.log(document.documentElement.scrollTop); */
-
+const App = () => {
   return (
     <>
       <GlobalStyle />
@@ -14,6 +11,6 @@ function App() {
       <Home />;
     </>
   );
-}
+};
 
 export default App;

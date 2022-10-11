@@ -5,6 +5,40 @@ export const Container = styled.section`
   height: 90vh;
   position: relative;
 
+  /* ----- TEXT ANIMATIONS ----- */
+
+  .hideOnLeft {
+    transform: translateX(-100%);
+  }
+  .hideOnRigth {
+    transform: translateX(150%);
+  }
+
+  .showFromLeft {
+    animation: slideFromLeft 3s ease;
+  }
+  .showFromRigth {
+    animation: slideFromRigth 3s ease;
+  }
+
+  /* ----- KEYFRAMES TEXT ANIMATIONS ----- */
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideFromRigth {
+    from {
+      transform: translateX(150%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
   /* ----- BREACKPOINTS ----- */
 
   @media (min-width: 550px) {
@@ -154,9 +188,48 @@ export const Background = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  img {
-    height: 100vh;
-    width: 200%;
+
+  /* ----- SVG ANIMATIONS -----  */
+
+  .firstWaveAnimation {
+    animation: fig-waves 5s ease infinite alternate;
+  }
+  .secondWaveAnimation {
+    animation: fig-waves 4s ease infinite 1s alternate;
+  }
+  .thirdWaveAnimation {
+    animation: fig-waves 5s ease infinite 2s alternate;
+  }
+  .fourthWaveAnimation {
+    animation: fig-waves 4s ease infinite 3s alternate;
+  }
+  .fifthWaveAnimation {
+    animation: fig-waves 5s ease infinite 5s alternate;
+  }
+
+  .backgroundToShowAnimation {
+    animation: toShow 3s ease;
+  }
+
+  @keyframes fig-waves {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(-200px, 0, 0);
+    }
+    100% {
+      transform: translate3d(200px, 0, 0);
+    }
+  }
+
+  @keyframes toShow {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
   }
 `;
 
@@ -198,6 +271,10 @@ export const IconBox = styled.ul`
   img {
     width: 1.5rem;
     height: 1.5rem;
+    transition: 1s ease;
+  }
+  img:hover {
+    transform: scale(1.1);
   }
 
   /* ----- BREACKPOINTS ----- */

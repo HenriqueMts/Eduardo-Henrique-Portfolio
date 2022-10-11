@@ -80,11 +80,17 @@ export const Footer = styled.footer`
       align-items: center;
       gap: 12px;
       text-decoration: none;
+      transition: 1s ease;
       img {
         width: 1.5rem;
         height: 1.5rem;
       }
     }
+  }
+
+  a:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 5px 4px rgba(3, 3, 3, 0.6);
   }
 
   /* ----- BREACKPOINTS ----- */

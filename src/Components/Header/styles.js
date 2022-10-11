@@ -15,9 +15,15 @@ export const Container = styled.header`
   background-blend-mode: soft-light;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow-x: visible;
+
   img {
     width: 42px;
     margin: 0;
+    transition: 1s ease;
+  }
+
+  img:hover {
+    transform: scale(1.1);
   }
 
   a {
