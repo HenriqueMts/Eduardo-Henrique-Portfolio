@@ -17,7 +17,6 @@ export const Container = styled.section`
 `;
 export const Content = styled.div`
   width: 100%;
-  height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;

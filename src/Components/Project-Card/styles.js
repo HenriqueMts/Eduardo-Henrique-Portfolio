@@ -1,78 +1,68 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.li`
+  width: 95%;
+  height: 116px;
   display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  width: 100%;
-  height: 260px;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(12, 30, 45, 0.7);
+  backdrop-filter: blur(14px);
+  gap: 8px;
+  transition: 0.8s ease;
 
   figure {
-    position: absolute;
-    width: 100%;
+    width: 30%;
+    min-width: 30%;
     height: 100%;
-    z-index: -20;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     img {
       width: 100%;
       height: 100%;
     }
   }
-
-  /* ----- BREACKPOINTS ----- */
-
-  @media (min-width: 550px) {
-    height: 460px;
-
-    figure {
-      height: 460px;
-    }
+  :hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.75);
   }
 
+  /* ----- BREACKPOINTS ----- */
+  @media (min-width: 720px) {
+    height: 216px;
+  }
   @media (min-width: 1150px) {
-    height: 100vh;
-
-    figure {
-      height: 100%;
-    }
+    flex-direction: row;
+    height: 198px;
   }
 `;
 
-export const Content = styled.footer`
-  background: linear-gradient(
-    90deg,
-    rgba(0, 5, 19, 0.4) 20%,
-    rgba(10, 16, 33, 0.4) 50.28%,
-    rgba(18, 25, 43, 0.4) 81.15%
-  );
+export const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  .react-icons {
-    color: #49739c;
-    width: 24px;
-    height: 24px;
-    vertical-align: middle;
-  }
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
   h2 {
-    font-size: 1.8rem;
-    background: linear-gradient(89.99deg, #174086 -4.74%, #b5c4e9 102.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  span {
-    font-size: 0.8rem;
-
-    margin-bottom: 1%;
-    color: #7c7d80;
+    font-size: 1.2rem;
   }
   a {
     text-decoration: none;
-    font-weight: bold;
-    color: #49739c;
-    font-size: 1.1rem;
-    transition: 1s ease;
   }
-  a:hover {
-    transform: translateX(10px);
+  p {
+    width: 100%;
+    color: #7c7d80;
+    margin-top: 3%;
+  }
+
+  /* ----- BREACKPOINTS ----- */
+
+  @media (min-width: 1150px) {
+    h2 {
+      font-size: 2rem;
+    }
   }
 `;
