@@ -39,7 +39,8 @@ export const TextContent = styled.div`
   p {
     color: #7c7d80;
     margin-top: 5%;
-    margin-bottom: 5%;
+    font-size: 1.2rem;
+
     width: 95%;
   }
 

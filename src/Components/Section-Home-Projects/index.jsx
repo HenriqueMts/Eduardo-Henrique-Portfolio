@@ -21,14 +21,7 @@ const HomeProjects = () => {
           alt={"NuKenzie"}
           title={"Nu Kenzie"}
         >
-          Nu Kenzie is a Financial control control Website to organize you life,
-          <p>
-            {" "}
-            <a href="https://br.freepik.com/vetores-gratis/ilustracao-da-pagina-inicial-da-web-criativa_21742831.htm#query=landing%20page&position=6&from_view=keyword">
-              Image by pikisuperstar
-            </a>
-            on Freepik
-          </p>
+          Nu Kenzie is a Financial control Website to organize you life,
         </ProjectCard>
         <ProjectCard
           path={"https://adopet-m3.vercel.app/"}

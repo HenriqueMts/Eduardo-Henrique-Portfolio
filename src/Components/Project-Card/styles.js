@@ -11,6 +11,12 @@ export const Container = styled.li`
   gap: 8px;
   transition: 0.8s ease;
 
+  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
   figure {
     width: 30%;
     min-width: 30%;
@@ -42,18 +48,22 @@ export const Container = styled.li`
 
 export const Content = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
   justify-content: center;
   cursor: pointer;
   height: 100%;
   h2 {
     font-size: 1.2rem;
+    margin-left: 4%;
   }
   a {
     text-decoration: none;
   }
   p {
     width: 100%;
+    margin-left: 4%;
+    font-size: 1rem;
     color: #7c7d80;
     margin-top: 3%;
   }

@@ -43,7 +43,11 @@ export const Content = styled.div`
   }
 
   p {
-    width: 80%;
+    letter-spacing: 0.1rem;
+
+    font-size: 1.2rem;
+    width: 100vh;
+    height: 100%;
     color: #7c7d80;
     margin-bottom: 4%;
   }
