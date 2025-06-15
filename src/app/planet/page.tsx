@@ -1,15 +1,15 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import GalaxyBackground from "./components/3d/galax-background";
+import GalaxyBackground from "./components/3d/galaxy-background";
 import { Suspense } from "react";
 
-export default function PlanetPage() {
+export default function GalaxyBackgroundPage() {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen bg-black">
       <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
+        <ambientLight intensity={1} />
+        <directionalLight position={[0, 0, 0]} intensity={10} />
         <Suspense fallback={null}>
           <GalaxyBackground />
         </Suspense>

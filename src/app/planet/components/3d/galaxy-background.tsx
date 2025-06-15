@@ -2,7 +2,7 @@
 
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
-import SpiralGalaxy from "./galax-scene";
+import GalaxyBuilder from "./galaxy-builder";
 
 export default function GalaxyBackground() {
   return (
@@ -11,7 +11,7 @@ export default function GalaxyBackground() {
         <ambientLight intensity={1} />
         <directionalLight position={[0, 0, 0]} intensity={10} />
         <Suspense fallback={null}>
-          <SpiralGalaxy />
+          <GalaxyBuilder />
         </Suspense>
       </Canvas>
     </div>

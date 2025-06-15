@@ -1,11 +1,13 @@
 "use client";
 
 import * as THREE from "three";
-import { useMemo, useRef } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export default function SpiralGalaxy() {
   const pointsRef = useRef<THREE.Points>(null);
+  const materialRef = useRef<THREE.PointsMaterial>(null);
+  const [opacity, setOpacity] = useState(0);
 
   const { positions, colors } = useMemo(() => {
     const numStars = 10000;
@@ -27,10 +29,9 @@ export default function SpiralGalaxy() {
 
       const distance = Math.sqrt(x * x + y * y + z * z) / radius;
       const color = new THREE.Color();
-
       color.lerpColors(
-        new THREE.Color("#C893ED"), // Centro (azulado claro)
-        new THREE.Color("#8937B9"), // Bordas (roxo escuro)
+        new THREE.Color("#C893ED"),
+        new THREE.Color("#8937B9"),
         distance
       );
 
@@ -43,7 +44,14 @@ export default function SpiralGalaxy() {
     };
   }, []);
 
+  // Faz a opacidade aumentar aos poucos
   useFrame(() => {
+    if (materialRef.current && opacity < 1) {
+      const newOpacity = Math.min(opacity + 0.01, 1);
+      setOpacity(newOpacity);
+      materialRef.current.opacity = newOpacity;
+    }
+
     if (pointsRef.current) {
       pointsRef.current.rotation.y += 0.0008;
     }
@@ -51,12 +59,11 @@ export default function SpiralGalaxy() {
 
   return (
     <>
-      {/* Luz intensa no centro */}
       <pointLight
         position={[0, 0, 0]}
         intensity={10}
         distance={20}
-        color={"#8937B9"}
+        color="#8937B9"
       />
       <points ref={pointsRef}>
         <bufferGeometry>
@@ -66,7 +73,14 @@ export default function SpiralGalaxy() {
           />
           <bufferAttribute attach="attributes-color" args={[colors.array, 3]} />
         </bufferGeometry>
-        <pointsMaterial vertexColors size={0.05} sizeAttenuation />
+        <pointsMaterial
+          ref={materialRef}
+          vertexColors
+          size={0.05}
+          sizeAttenuation
+          transparent
+          opacity={opacity}
+        />
       </points>
     </>
   );

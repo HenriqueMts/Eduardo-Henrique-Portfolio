@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import GalaxyBackground from "./3d/galax-background";
+import GalaxyBackground from "./3d/galaxy-background";
 
 export default function HeroPage() {
   const [showScene, setShowScene] = useState(false);
@@ -13,7 +13,7 @@ export default function HeroPage() {
         "opacity-0 scale-105 transition-all duration-1000 ease-in-out"
       );
       setTimeout(() => setShowScene(true), 1000);
-    }, 5000);
+    }, 6000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -41,8 +41,9 @@ export default function HeroPage() {
       )}
 
       {showScene && (
-        <div className="absolute inset-0 animate-fade-in-scale">
+        <div className="absolute inset-0  animate-fade-in-scale">
           <GalaxyBackground />
+          <div className="absolute inset-0 bg-[#272727] opacity-35 pointer-events-none z-10" />
         </div>
       )}
     </div>
