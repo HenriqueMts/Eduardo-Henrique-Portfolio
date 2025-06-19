@@ -11,7 +11,7 @@ export default function SpiralGalaxy() {
 
   const { positions, colors } = useMemo(() => {
     const numStars = 10000;
-    const arms = 6;
+    const arms = 5;
     const radius = 60;
 
     const positionsArray: number[] = [];
@@ -61,7 +61,7 @@ export default function SpiralGalaxy() {
     <>
       <pointLight
         position={[0, 0, 0]}
-        intensity={10}
+        intensity={15}
         distance={20}
         color="#8937B9"
       />

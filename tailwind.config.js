@@ -1,7 +1,11 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-inter)"],
+      },
       keyframes: {
         "fade-in-scale": {
           "0%": { opacity: "0", transform: "scale(1.05)" },
