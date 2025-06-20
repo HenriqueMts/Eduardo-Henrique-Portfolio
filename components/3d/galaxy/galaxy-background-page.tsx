@@ -1,7 +1,7 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import GalaxyBackground from "./components/3d/galaxy-background";
+import GalaxyBackground from "./galaxy-background";
 import { Suspense } from "react";
 
 export default function GalaxyBackgroundPage() {

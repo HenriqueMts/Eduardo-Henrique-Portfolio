@@ -1,7 +1,7 @@
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Stack", href: "#stack" },
+  { label: "Projects", href: "#projects" },
+  { label: "Stacks", href: "#stacks" },
   { label: "Contact", href: "#contact" },
 ];
 const Header = () => {

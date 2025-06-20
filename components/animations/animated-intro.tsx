@@ -61,7 +61,7 @@ export default function AnimatedIntro() {
 
       <AnimatedLine
         text="EDUARDO HENRIQUE"
-        className="text-4xl md:text-8xl  font-extrabold bg-gradient-to-r from-[#401259] via-[#9E49D4] to-[#C893ED] bg-clip-text text-transparent m-8 "
+        className="text-4xl md:text-7xl xl:text-8xl font-extrabold bg-gradient-to-r from-[#401259] via-[#9E49D4] to-[#C893ED] bg-clip-text text-transparent m-8 "
       />
 
       <AnimatedLine

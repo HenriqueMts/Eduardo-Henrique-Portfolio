@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "./galaxy/components/header/header";
-import HeroPage from "./galaxy/components/hero-page";
-import GalaxyBackground from "./galaxy/components/3d/galaxy-background";
+import Header from "./shared/header";
+import HeroPage from "./hero/hero-page";
+import GalaxyBackground from "../../components/3d/galaxy/galaxy-background";
+import ProjectPage from "./projects/project-page";
 
 export default function Home() {
   const [showScene, setShowScene] = useState(false);
@@ -21,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <div className="relative w-full min-h-screen bg-black overflow-x-hidden">
       {!showScene && (
         <video
           src="/intro.mp4"
@@ -46,6 +47,7 @@ export default function Home() {
             <Header />
             <main className="w-full">
               <HeroPage />
+              <ProjectPage />
             </main>
           </div>
         </>

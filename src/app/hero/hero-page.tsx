@@ -1,5 +1,5 @@
-import AnimatedIntro from "./animations/animated-intro";
-import AnimatedDescription from "./animations/animated-description";
+import AnimatedIntro from "../../../components/animations/animated-intro";
+import AnimatedDescription from "../../../components/animations/animated-description";
 
 export default function HeroPage() {
   return (
