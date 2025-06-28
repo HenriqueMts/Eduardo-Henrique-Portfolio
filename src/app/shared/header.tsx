@@ -6,7 +6,7 @@ const navLinks = [
 ];
 const Header = () => {
   return (
-    <nav className=" text-background flex justify-around items-center p-4 fixed top-0 left-0 right-0 z-50 w-[28%] border-3 border-ring mx-auto mt-5 rounded-full backdrop-blur-md px-15  ">
+    <nav className=" text-background flex justify-around items-center p-4 fixed top-0 left-0 right-0 z-50 w-[28%] border-3 border-ring mx-auto mt-5 rounded-full backdrop-blur-sm px-15  ">
       {navLinks.map((link) => (
         <a
           key={link.href}

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Header from "./shared/header";
 import HeroPage from "./hero/hero-page";
-import GalaxyBackground from "../../components/3d/galaxy/galaxy-background";
+import GalaxyBackground from "../components/3d/galaxy/galaxy-background";
 import ProjectPage from "./projects/project-page";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         "opacity-0 scale-105 transition-all duration-1000 ease-in-out"
       );
       setTimeout(() => setShowScene(true), 1000);
-    }, 4000);
+    }, 7000);
 
     return () => clearTimeout(timer);
   }, []);
