@@ -11,7 +11,7 @@ export default function AnimatedDescription() {
       transition={{ duration: 0.8, ease: "easeOut", delay: 1.2 }}
     >
       I build interactive, high-performance web experiences using modern
-      technologies like React and Next.js.
+      technologies.
     </motion.p>
   );
 }

@@ -2,7 +2,7 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "Stacks", href: "#stacks" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "#about" },
 ];
 const Header = () => {
   return (
@@ -11,7 +11,7 @@ const Header = () => {
         <a
           key={link.href}
           href={link.href}
-          className="text-white text-base transition-transform duration-300 hover:scale-110 hover:drop-shadow-[0_0_4px_white]"
+          className="text-muted-foreground text-base transition-transform duration-300 hover:scale-110 hover:drop-shadow-[0_0_4px_white]"
         >
           {link.label}
         </a>

@@ -6,37 +6,17 @@ const projects = [
     title: "Adopet",
     imageSrc: "/projects/adopet-logo.png",
     description:
-      "Plataforma para adoção de pets, com filtros, cadastro e UX focada em usabilidade.",
+      "A pet adoption platform featuring filters, user registration, and a UX design focused on accessibility and ease of use.",
     techs: ["React", "TypeScript", "Tailwind"],
     projectLink: "https://adopet-m3.vercel.app",
-    gitLink: "https://github.com/eduardo-henrique/adopet",
+    gitLink: "https://github.com/HenriqueMts/capstone-m3",
   },
   {
     id: 2,
     title: "NuKenzie",
     imageSrc: "/projects/nukenzie.png",
     description:
-      "Aplicativo para controle financeiro pessoal, com entradas e saídas e filtros por categoria.",
-    techs: ["Next.js", "TypeScript", "Shadcn UI"],
-    projectLink: "https://nu-kenzie-redux-thunk.vercel.app",
-    gitLink: "https://github.com/HenriqueMts/nu-kenzie-redux-thunk",
-  },
-  {
-    id: 3,
-    title: "NuKenzie",
-    imageSrc: "/projects/nukenzie.png",
-    description:
-      "Aplicativo para controle financeiro pessoal, com entradas e saídas e filtros por categoria.",
-    techs: ["Next.js", "TypeScript", "Shadcn UI"],
-    projectLink: "https://nu-kenzie-redux-thunk.vercel.app",
-    gitLink: "https://github.com/HenriqueMts/nu-kenzie-redux-thunk",
-  },
-  {
-    id: 4,
-    title: "NuKenzie",
-    imageSrc: "/projects/nukenzie.png",
-    description:
-      "Aplicativo para controle financeiro pessoal, com entradas e saídas e filtros por categoria.",
+      "A personal finance control application with income and expenses tracking and category filters.",
     techs: ["Next.js", "TypeScript", "Shadcn UI"],
     projectLink: "https://nu-kenzie-redux-thunk.vercel.app",
     gitLink: "https://github.com/HenriqueMts/nu-kenzie-redux-thunk",
@@ -46,8 +26,10 @@ const projects = [
 export default function ProjectPage() {
   return (
     <>
-      <div className="w-full text-center py-10 px-5" id="projects">
-        <h1 className="text-white text-4xl font-bold text-center">Projects</h1>
+      <div className="w-full text-center py-10 px-5 gap-8" id="projects">
+        <h1 className="text-white text-4xl font-bold text-center mt-10">
+          Projects
+        </h1>
         <p className="text-muted-foreground text-lg text-center mt-4 max-w-2xl mx-auto">
           These projects represent my journey as a front-end developer — from
           building intuitive user interfaces to structuring scalable components.

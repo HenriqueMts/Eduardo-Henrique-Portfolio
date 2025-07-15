@@ -8,15 +8,16 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useRef } from "react";
 
-interface ProjectCardProps {
+type ProjectCardProps = {
   title: string;
   imageSrc: string;
   description: string;
   techs: string[];
   projectLink: string;
   gitLink: string;
-}
+};
 
 export function ProjectCard({
   title,
@@ -25,43 +26,46 @@ export function ProjectCard({
   techs,
   projectLink,
   gitLink,
-}: ProjectCardProps) {
+}: Readonly<ProjectCardProps>) {
+  const ref = useRef<HTMLDivElement>(null);
+
   return (
     <Dialog>
-      <div
-        className="
+      <div className="relative" style={{ perspective: "800px" }}>
+        <div
+          ref={ref}
+          className="
           group relative w-full max-w-sm p-4 rounded-2xl
           bg-gradient-to-br from-purple-400/30 to-purple-700/30
-          backdrop-blur-sm transition-all hover:scale-105 hover:shadow-lg mr-10
+          backdrop-blur-sm  mr-10
         "
-      >
-        <div className="overflow-hidden rounded-xl ">
-          <Image
-            src={imageSrc}
-            alt={title}
-            width={300}
-            height={500}
-            className="object-cover w-[25rem] h-[31rem]  transition-all group-hover:scale-105 "
-          />
-        </div>
-
-        <div className="mt-3">
-          <h3 className="text-xl font-semibold text-white text-center">
-            {title}
-          </h3>
-        </div>
-
-        <DialogTrigger asChild>
-          <button
-            className="
+        >
+          <div className="overflow-hidden rounded-xl ">
+            <Image
+              src={imageSrc}
+              alt={title}
+              width={300}
+              height={500}
+              className="object-cover w-[25rem] h-[31rem]  transition-all group-hover:scale-105 "
+            />
+          </div>
+          <div className="mt-3">
+            <h3 className="text-xl font-semibold text-white text-center">
+              {title}
+            </h3>
+          </div>
+          <DialogTrigger asChild>
+            <button
+              className="
               cursor-pointer
               mt-3 w-full py-2 rounded-lg bg-purple-600 hover:bg-purple-700
               text-white font-medium transition-all
             "
-          >
-            Show Details
-          </button>
-        </DialogTrigger>
+            >
+              Show Details
+            </button>
+          </DialogTrigger>
+        </div>
       </div>
 
       <DialogContent className="max-w-lg bg-gradient-to-br from-purple-500/40 to-purple-900/40 backdrop-blur-sm text-white">
@@ -78,7 +82,7 @@ export function ProjectCard({
           />
           <p>{description}</p>
           <div>
-            <h4 className="font-semibold">Tecnologias usadas:</h4>
+            <h4 className="font-semibold"> Utilized technologies:</h4>
             <ul className="list-disc list-inside">
               {techs.map((tech, index) => (
                 <li key={index}>{tech}</li>

@@ -6,6 +6,9 @@ import HeroPage from "./hero/hero-page";
 import GalaxyBackground from "../components/3d/galaxy/galaxy-background";
 import ProjectPage from "./projects/project-page";
 
+import StacksPage from "./stacks/stacks-page";
+import AboutPage from "./about/about-page";
+
 export default function Home() {
   const [showScene, setShowScene] = useState(false);
   const [fadeClass, setFadeClass] = useState("opacity-100 scale-100");
@@ -16,13 +19,13 @@ export default function Home() {
         "opacity-0 scale-105 transition-all duration-1000 ease-in-out"
       );
       setTimeout(() => setShowScene(true), 1000);
-    }, 7000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen bg-black overflow-x-hidden">
+    <div className="relative w-full min-h-screen bg-black overflow-x-hidden ">
       {!showScene && (
         <video
           src="/intro.mp4"
@@ -48,6 +51,8 @@ export default function Home() {
             <main className="w-full">
               <HeroPage />
               <ProjectPage />
+              <StacksPage />
+              <AboutPage />
             </main>
           </div>
         </>

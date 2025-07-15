@@ -65,7 +65,7 @@ export default function AnimatedIntro() {
       />
 
       <AnimatedLine
-        text="FRONT-END DEVELOPER"
+        text="FULL STACK DEVELOPER"
         className="text-sm md:text-2xl font-semibold text-[#9E49D4] "
       />
     </div>
