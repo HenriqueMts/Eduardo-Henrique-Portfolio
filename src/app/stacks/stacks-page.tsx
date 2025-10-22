@@ -12,25 +12,26 @@ const stacks = [
 ];
 const StacksPage = () => {
   return (
-    <section className="py-10 px-5" id="stacks">
-      <h2 className="text-white text-3xl font-bold text-center">Tech Stacks</h2>
-      <p className="text-muted-foreground text-lg text-center mt-4 max-w-2xl mx-auto">
-        Here are the technologies I work with:
-      </p>
-      <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+    <section
+      className="flex flex-col items-center justify-center py-8 md:py-16 px-4 md:px-0"
+      id="stacks"
+    >
+      <h2 className="text-white text-2xl md:text-4xl font-bold mb-4 md:mb-8 text-center">
+        Tech Stack
+      </h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8 max-w-full mx-auto">
         {stacks.map((stack) => (
-          <div key={stack.name} className="flex flex-col items-center">
-            <h4 className="text-muted-foreground text-lg font-semibold mt-4 mb-6">
+          <div
+            key={stack.name}
+            className="flex flex-col items-center w-full h-full"
+          >
+            <h4 className="text-muted-foreground text-sm md:text-lg font-semibold mt-2 md:mt-4 mb-3 md:mb-6">
               {stack.name}
             </h4>
             <StackCard
               imageSrc={stack.icon}
               altText={stack.name}
               captionText={`${stack.name} icon`}
-              containerHeight="200px"
-              containerWidth="200px"
-              imageHeight="200px"
-              imageWidth="200px "
               rotateAmplitude={12}
               scaleOnHover={1.2}
               showMobileWarning={false}

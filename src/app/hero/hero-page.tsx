@@ -1,28 +1,25 @@
 import AnimatedIntro from "../../components/animations/animated-intro";
 import AnimatedDescription from "../../components/animations/animated-description";
+import AnimatedButton from "../../components/animations/animated-button";
 
 export default function HeroPage() {
   return (
-    <section className="flex flex-col items-center justify-center h-screen ">
+    <section className="relative flex flex-col items-center justify-center min-h-screen">
       <div
-        className="flex items-center justify-evenly h-screen text-center px-4 w-full "
+        className="flex flex-col lg:flex-row items-center justify-evenly w-full px-4 sm:px-6 md:px-8 lg:px-16 py-8 lg:py-0"
         id="home"
       >
-        <div className="flex-1 flex justify-center">
+        <div className="flex-1 flex flex-col justify-center items-center w-full lg:w-fullmb-8 sm:mb-10 lg:mb-0">
           <AnimatedIntro />
         </div>
-        <div className="flex-1 flex justify-center">
+
+        <div className="flex-1 flex justify-center w-full lg:w-1/2">
           <AnimatedDescription />
         </div>
       </div>
-      <div className="flex w-full justify-start items-center ">
-        <ul className="list-disc list-inside flex gap-2 text-muted-foreground">
-          <li>
-            <a href="https://www.example.com" className="">
-              Building responsive web applications
-            </a>
-          </li>
-        </ul>
+
+      <div className="bottom-6 sm:bottom-8 md:bottom-12 lg:bottom-16 w-full">
+        <AnimatedButton />
       </div>
     </section>
   );

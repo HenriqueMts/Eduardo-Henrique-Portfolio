@@ -56,17 +56,17 @@ export default function AnimatedIntro() {
     <div className="flex flex-col w-full justify-around h-auto  p-10">
       <AnimatedLine
         text="Hi, I'm"
-        className="text-base md:text-3xl font-medium text-left ml-18 text-[#9E49D4]  "
+        className="text-base md:text-3xl lg:text-4xl font-medium text-left ml-18 text-[#9E49D4]  "
       />
 
       <AnimatedLine
         text="EDUARDO HENRIQUE"
-        className="text-4xl md:text-7xl xl:text-8xl font-extrabold bg-gradient-to-r from-[#401259] via-[#9E49D4] to-[#C893ED] bg-clip-text text-transparent m-8 "
+        className="text-4xl text-center md:text-6x1 lg:text-8xl font-extrabold bg-gradient-to-r from-[#401259] via-[#9E49D4] to-[#C893ED] bg-clip-text text-transparent m-8 "
       />
 
       <AnimatedLine
         text="FULL STACK DEVELOPER"
-        className="text-sm md:text-2xl font-semibold text-[#9E49D4] "
+        className="text-sm text-center md:text-2xl font-semibold text-[#9E49D4] "
       />
     </div>
   );

@@ -34,7 +34,7 @@ export default function StackCard({
   imageWidth = "200px",
   scaleOnHover = 1.1,
   rotateAmplitude = 14,
-  showMobileWarning = true,
+  showMobileWarning = false,
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false,
@@ -91,7 +91,7 @@ export default function StackCard({
   return (
     <figure
       ref={ref}
-      className=" rounded-xl relative w-full h-full [perspective:600px] flex flex-col items-center justify-center shadow-lg transition-transform duration-300 ease-in-out"
+      className="relative w-[200px] h-[200px] md:w-[120px] md:h-[120px] [perspective:800px] flex flex-col items-center justify-center"
       style={{
         height: containerHeight,
         width: containerWidth,
@@ -107,10 +107,8 @@ export default function StackCard({
       )}
 
       <motion.div
-        className="relative [transform-style:preserve-3d] "
+        className="relative [transform-style:preserve-3d] w-full h-full"
         style={{
-          width: imageWidth,
-          height: imageHeight,
           rotateX,
           rotateY,
           scale,
@@ -119,11 +117,7 @@ export default function StackCard({
         <motion.img
           src={imageSrc}
           alt={altText}
-          className="absolute top-0 left-0 object-cover rounded-[15px] will-change-transform [transform:translateZ(0)]"
-          style={{
-            width: imageWidth,
-            height: imageHeight,
-          }}
+          className="absolute top-0 left-0 w-full h-full object-contain rounded-[15px] will-change-transform [transform:translateZ(0)]"
         />
 
         {displayOverlayContent && overlayContent && (

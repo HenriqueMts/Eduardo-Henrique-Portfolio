@@ -25,12 +25,15 @@ const projects = [
 
 export default function ProjectPage() {
   return (
-    <>
-      <div className="w-full text-center py-10 px-5 gap-8" id="projects">
-        <h1 className="text-white text-4xl font-bold text-center mt-10">
+    <section className="mx-auto mt-5 px-4 md:px-15">
+      <div
+        className="w-full text-center py-6 md:py-10 gap-4 md:gap-8"
+        id="projects"
+      >
+        <h1 className="text-white text-3xl md:text-4xl font-bold text-center mt-6 md:mt-10">
           Projects
         </h1>
-        <p className="text-muted-foreground text-lg text-center mt-4 max-w-2xl mx-auto">
+        <p className="text-muted-foreground text-base md:text-lg text-center mt-4 max-w-2xl mx-auto px-4 md:px-0">
           These projects represent my journey as a front-end developer — from
           building intuitive user interfaces to structuring scalable components.
           They're powered by technologies like React, TypeScript, TailwindCSS,
@@ -39,7 +42,7 @@ export default function ProjectPage() {
         </p>
       </div>
 
-      <section className="mt-10 py-10 px-5 flex gap-6 w-full items-center justify-center flex-wrap space-around ">
+      <section className="mt-6 md:mt-10 py-6 md:py-10 px-4 md:px-5 flex gap-6 w-full items-center justify-center flex-wrap">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
@@ -52,6 +55,6 @@ export default function ProjectPage() {
           />
         ))}
       </section>
-    </>
+    </section>
   );
 }
