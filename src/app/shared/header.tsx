@@ -1,3 +1,5 @@
+"use client";
+
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
@@ -6,6 +8,19 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    element?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <nav
       className="
@@ -27,6 +42,7 @@ const Header = () => {
         <a
           key={link.href}
           href={link.href}
+          onClick={(e) => handleScroll(e, link.href)}
           className="
             text-muted-foreground 
             text-xs sm:text-sm md:text-base 
