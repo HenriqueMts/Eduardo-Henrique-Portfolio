@@ -7,8 +7,8 @@ const projects = [
     imageSrc: "/projects/adopet-logo.png",
     description:
       "A pet adoption platform featuring filters, user registration, and a UX design focused on accessibility and ease of use.",
-    techs: ["React", "TypeScript", "Tailwind"],
-    projectLink: "https://adopet-m3.vercel.app",
+    techs: ["React", "TypeScript", "Styled Components"],
+    projectLink: "https://capstone-m3-kappa.vercel.app",
     gitLink: "https://github.com/HenriqueMts/capstone-m3",
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     imageSrc: "/projects/nukenzie.png",
     description:
       "A personal finance control application with income and expenses tracking and category filters.",
-    techs: ["Next.js", "TypeScript", "Shadcn UI"],
+    techs: ["React"],
     projectLink: "https://nu-kenzie-redux-thunk.vercel.app",
     gitLink: "https://github.com/HenriqueMts/nu-kenzie-redux-thunk",
   },
