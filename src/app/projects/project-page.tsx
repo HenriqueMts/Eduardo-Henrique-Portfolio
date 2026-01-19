@@ -3,16 +3,33 @@ import { ProjectCard } from "./_components/project-card";
 const projects = [
   {
     id: 1,
+    title: "Axis",
+    imageSrc: "/projects/axis.svg",
+    description:
+      "A full-stack SaaS application for weekly goal management. Features include progress tracking, interactive dashboards, daily logs, and secure authentication using NextAuth, Drizzle ORM, and PostgreSQL.",
+    techs: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Drizzle ORM",
+      "PostgreSQL",
+      "NextAuth",
+    ],
+    projectLink: "https://axis-gray-nine.vercel.app",
+    gitLink: "https://github.com/HenriqueMts/Axis",
+  },
+  {
+    id: 2,
     title: "Adopet",
     imageSrc: "/projects/adopet-logo.png",
     description:
       "A pet adoption platform featuring filters, user registration, and a UX design focused on accessibility and ease of use.",
-    techs: ["React", "TypeScript", "Styled Components"],
+    techs: ["React", "JavaScript", "Styled Components", "tailwindcss"],
     projectLink: "https://capstone-m3-kappa.vercel.app",
     gitLink: "https://github.com/HenriqueMts/capstone-m3",
   },
   {
-    id: 2,
+    id: 3,
     title: "NuKenzie",
     imageSrc: "/projects/nukenzie.png",
     description:
