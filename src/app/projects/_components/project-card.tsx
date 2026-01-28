@@ -37,7 +37,7 @@ export function ProjectCard({
           className="
           group relative w-full max-w-sm p-4 rounded-2xl
           bg-gradient-to-br from-purple-400/30 to-purple-700/30
-          backdrop-blur-sm  mr-10
+          backdrop-blur-sm
         "
         >
           <div className="overflow-hidden rounded-xl ">
@@ -46,7 +46,7 @@ export function ProjectCard({
               alt={title}
               width={300}
               height={500}
-              className="object-cover w-[25rem] h-[31rem]  transition-all group-hover:scale-105 "
+              className="object-cover w-full h-auto max-h-[250px] sm:max-h-[400px] transition-all group-hover:scale-105 "
             />
           </div>
           <div className="mt-3">
@@ -68,9 +68,9 @@ export function ProjectCard({
         </div>
       </div>
 
-      <DialogContent className="max-w-lg bg-gradient-to-br from-purple-500/40 to-purple-900/40 backdrop-blur-sm text-white">
+      <DialogContent className="max-w-lg bg-gradient-to-br from-purple-500/40 to-purple-900/40 backdrop-blur-sm text-white p-4 sm:p-6">
         <DialogHeader>
-          <DialogTitle>{title}</DialogTitle>
+          <DialogTitle className="text-lg sm:text-xl">{title}</DialogTitle>
         </DialogHeader>
         <div className="space-y-4">
           <Image
@@ -78,24 +78,27 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className="rounded-xl object-cover"
+            className="rounded-xl object-cover w-full h-auto"
           />
-          <p>{description}</p>
+          <p className="text-sm sm:text-base">{description}</p>
           <div>
-            <h4 className="font-semibold"> Utilized technologies:</h4>
-            <ul className="list-disc list-inside">
+            <h4 className="font-semibold text-sm sm:text-base">
+              {" "}
+              Utilized technologies:
+            </h4>
+            <ul className="list-disc list-inside text-sm sm:text-base">
               {techs.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="flex w-full justify-around items-center  gap-4 mt-6">
+        <div className="flex w-full justify-around items-center gap-2 sm:gap-4 mt-6 flex-wrap sm:flex-nowrap">
           <a
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn text-center  border-2 border-ring rounded-full px-4 py-2 hover:bg-ring transition-colors w-[40%]"
+            className="btn text-center text-xs sm:text-sm border-2 border-ring rounded-full px-3 sm:px-4 py-2 hover:bg-ring transition-colors flex-1 sm:flex-none sm:w-[40%] whitespace-nowrap"
           >
             See the project
           </a>
@@ -104,7 +107,7 @@ export function ProjectCard({
             href={gitLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn border-2 border-muted-foreground rounded-full px-4 py-2 hover:bg-muted-foreground transition-colors w-[40%]"
+            className="btn text-center text-xs sm:text-sm border-2 border-muted-foreground rounded-full px-3 sm:px-4 py-2 hover:bg-muted-foreground transition-colors flex-1 sm:flex-none sm:w-[40%] whitespace-nowrap"
           >
             See the repository
           </a>
